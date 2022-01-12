@@ -2,16 +2,20 @@
 
 body{
     font-family: 'Hind Siliguri', sans-serif;
-    background-color: gray;
+    background-color: #e6dcdc;
 }
 main{
     display: flex;
+    flex-direction: column;
+    align-items: center ;
     justify-content: center;
 }
 .container{
     background-color: white;
     width: 900px;
     padding: 33px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 .section-title{
     color: indigo;
@@ -21,6 +25,7 @@ main{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
 }
 .player{
     display: flex;
@@ -31,5 +36,68 @@ main{
     height: 50px;
 }   
 .player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid gray;
+    margin-bottom: 25px;
+}
+
+/* top blogs style  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+}
+.blog{
+    display: flex;
+}
+.thamble img{
+    width: 177px;
+    height: 150px;
+    border-radius: 20px;
+}
+.blog-title{
+    font-size: 20px;
     margin-left: 20px;
 }
+.blog-author{
+    color: gray;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.blog-author a{
+    text-decoration: none;
+    color: green;
+}
+/* icon style  */
+.fa-star.field{
+    color: yellow;
+}
+.fa-star.empty{
+    color: gray;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+
+@media only screen and (max-width: 688px){
+    .container{
+        text-align: center;
+        width: 100%;
+        
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+    .player{
+        flex-direction: column;
+    }
+}
+
+

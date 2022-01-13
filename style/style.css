@@ -72,32 +72,60 @@ hr{
     color: green;
 }
 /* icon style  */
-.fa-star.field{
+.fa-star.filled{
     color: yellow;
 }
 .fa-star.empty{
     color: gray;
 }
-
 .courses{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    text-align: center;
+}
+.course-rating{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   display: flex;
+   grid-row-gap: 5px;
+}
+.course-duration{
+    margin-left: 20px;
+    background-color: yellow;
+    /* padding: 7px; */
+    border-radius: 12px;
+}
+span{
+    margin-left: 8px;
 }
 
-@media only screen and (max-width: 688px){
+@media only screen and (max-width:688px) {
     .container{
-        text-align: center;
         width: 100%;
-        
     }
-    .players, .blogs{
-        grid-template-columns: repeat(1,1fr);
-        flex-direction: column;
+    .players, .blogs, .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .player{
+    .player, .blog, .course{
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .course-duration{
+        margin-bottom: 18px;
+        width: 80px;
+        margin: 0 auto;
+    }
+    .course-duration{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .course-rating{
+        justify-content: center;
+        display: block;
+    }
+    .section-title{
+        font-size: 25px;
     }
 }
-
-

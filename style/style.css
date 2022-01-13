@@ -34,6 +34,7 @@ main{
 .player img{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }   
 .player-name{
     margin-left: 16px;
@@ -42,6 +43,9 @@ main{
 hr{
     border: 1px solid gray;
     margin-bottom: 25px;
+}
+.blog-author .color{
+    color: brown;
 }
 
 /* top blogs style  */
@@ -91,7 +95,8 @@ hr{
 .course-duration{
     margin-left: 20px;
     background-color: yellow;
-    /* padding: 7px; */
+    padding: 5px;
+    margin-top: -3px;
     border-radius: 12px;
 }
 span{
@@ -115,6 +120,7 @@ span{
         margin-bottom: 18px;
         width: 80px;
         margin: 0 auto;
+        
     }
     .course-duration{
         margin-top: 15px;
